@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Button as ButtonPrimitive } from "@base-ui/react/button"
 import { cva, type VariantProps } from "class-variance-authority"
 
@@ -40,16 +41,31 @@ const buttonVariants = cva(
   }
 )
 
+interface ButtonProps extends ButtonPrimitive.Props, VariantProps<typeof buttonVariants> {
+  href?: string;
+}
+
 function Button({
   className,
   variant = "default",
   size = "default",
+  href,
   ...props
-}: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {
+}: ButtonProps) {
+  const styles = cn(buttonVariants({ variant, size, className }));
+
+  if (href) {
+    return (
+      <Link href={href} className={styles} {...(props as any)}>
+        {props.children}
+      </Link>
+    );
+  }
+
   return (
     <ButtonPrimitive
       data-slot="button"
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={styles}
       {...props}
     />
   )
