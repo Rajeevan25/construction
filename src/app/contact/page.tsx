@@ -27,7 +27,7 @@ export default function ContactPage() {
         <div className="rounded-3xl overflow-hidden h-[500px] relative border border-border/50">
           <iframe
             title="NorthStone Constructions — Jaffna HQ"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.164!2d80.0142!3d9.6615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe534f0d1e5b0b%3A0x0!2sTemple+Road%2C+Jaffna%2C+Sri+Lanka!5e0!3m2!1sen!2slk!4v1712600000000!5m2!1sen!2slk"
+            src="https://maps.google.com/maps?q=Temple+Road,+Jaffna,+Sri+Lanka&t=&z=16&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0, filter: "grayscale(1) invert(0.9) contrast(1.1)" }}
