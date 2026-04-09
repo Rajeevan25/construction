@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JAFFNA MONOLITH | Architectural Precision &amp; Local Heritage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#232a3a",
+                      "on-primary-fixed-variant": "#783200",
+                      "on-primary-container": "#582200",
+                      "secondary-container": "#404a59",
+                      "inverse-surface": "#dce2f7",
+                      "background": "#0c1322",
+                      "surface-container": "#191f2f",
+                      "surface-tint": "#ffb690",
+                      "outline-variant": "#584237",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "surface-container-lowest": "#070e1d",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "on-background": "#dce2f7",
+                      "surface-variant": "#2e3545",
+                      "tertiary-fixed-dim": "#c6c6c7",
+                      "error-container": "#93000a",
+                      "secondary-fixed-dim": "#bdc7d9",
+                      "error": "#ffb4ab",
+                      "on-primary-fixed": "#341100",
+                      "on-error": "#690005",
+                      "on-secondary-fixed": "#121c2a",
+                      "primary-fixed-dim": "#ffb690",
+                      "tertiary": "#c6c6c7",
+                      "inverse-primary": "#9d4300",
+                      "tertiary-fixed": "#e2e2e2",
+                      "on-primary": "#552100",
+                      "inverse-on-surface": "#293040",
+                      "surface-container-highest": "#2e3545",
+                      "on-surface-variant": "#e0c0b1",
+                      "on-tertiary-container": "#313333",
+                      "tertiary-container": "#9a9b9b",
+                      "on-secondary": "#27313f",
+                      "secondary": "#bdc7d9",
+                      "secondary-fixed": "#d9e3f6",
+                      "on-secondary-container": "#afb9cb",
+                      "surface-container-low": "#141b2b",
+                      "primary-fixed": "#ffdbca",
+                      "outline": "#a78b7d",
+                      "surface": "#0c1322",
+                      "primary-container": "#f97316",
+                      "primary": "#ffb690",
+                      "on-tertiary": "#2f3131",
+                      "on-secondary-fixed-variant": "#3d4756",
+                      "surface-bright": "#323949",
+                      "on-error-container": "#ffdad6",
+                      "surface-dim": "#0c1322",
+                      "on-surface": "#dce2f7"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+        .glass-nav { background: rgba(50, 57, 73, 0.6); backdrop-filter: blur(20px); }
+        .monolith-gradient { background: linear-gradient(135deg, #ffb690 0%, #f97316 100%); }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-2xl shadow-black/40">
+<div class="flex justify-between items-center px-8 py-4 max-w-full">
+<div class="text-2xl font-bold tracking-tighter text-white uppercase font-headline">
+                JAFFNA MONOLITH
+            </div>
+<div class="hidden md:flex items-center space-x-12 font-headline tracking-tight">
+<a class="text-orange-500 border-b-2 border-orange-500 pb-1 hover:text-orange-400 transition-colors duration-300" href="#">Services</a>
+<a class="text-slate-300 hover:text-orange-400 transition-colors duration-300" href="#">Projects</a>
+<a class="text-slate-300 hover:text-orange-400 transition-colors duration-300" href="#">About</a>
+<a class="text-slate-300 hover:text-orange-400 transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary-fixed font-bold uppercase py-2 px-6 rounded-lg active:scale-95 duration-200 monolith-gradient">
+                Get a Quote
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Modern construction site" class="w-full h-full object-cover grayscale opacity-40" data-alt="Cinematic wide shot of a modern architectural construction site at dusk with industrial cranes and warm construction lights glowing against a dark blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7c0vJuCds7xWUEuj3eDSeFETqM_kXqCih0k_VRg5iQuGM9KeURviPrOpwGcQgb9QfEeg5nwXMCSVNZEHzYT0Us3jdWdNROvvxGtKD_h1297eagQ0zSqHUB4uwhvaC6ZtSKl1psj3FT9p9buPrDuFDraj2e7oa7Cgju_NuPVIwDEiOtzh4XpeOVfFYOw8CA0ju8fdzTBf1lS-DhJNNeMfRm5KVRoj7q3MaYeOvQXio7OuHXbO0o1jSUOBfJ1bDOfMw8jMIyNpt3rA"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 md:px-24 max-w-5xl">
+<span class="inline-block px-4 py-1 mb-6 rounded-full bg-surface-container-highest/50 border border-outline-variant/20 text-primary uppercase tracking-[0.2em] text-xs font-bold">
+                Excellence in Engineering
+            </span>
+<h1 class="text-5xl md:text-8xl font-bold leading-[0.9] tracking-tighter text-white mb-8">
+                Building Jaffna’s <br/>
+<span class="text-primary-container">Future</span> with Strength.
+            </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-12 font-light leading-relaxed">
+                Pioneering high-end residential, commercial, and restoration projects with the rugged reliability of Jaffna’s heritage and the precision of modern craftsmanship.
+            </p>
+<div class="flex flex-col md:flex-row gap-6">
+<button class="monolith-gradient px-8 py-4 rounded-lg text-on-primary-fixed font-extrabold uppercase tracking-wider text-sm flex items-center justify-center gap-2 group">
+                    Get Free Quote
+                    <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="bg-transparent border border-outline-variant/30 hover:bg-surface-container-high px-8 py-4 rounded-lg text-white font-extrabold uppercase tracking-wider text-sm transition-all">
+                    View Projects
+                </button>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-50">
+<div class="w-[1px] h-16 bg-gradient-to-b from-primary-container to-transparent"></div>
+<span class="text-[10px] uppercase tracking-widest text-primary-container">Scroll</span>
+</div>
+</header>
+<!-- Stats Section (Surface Container Low shift) -->
+<section class="bg-surface-container-low py-24 px-8 md:px-24">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-24">
+<div class="flex flex-col gap-2">
+<span class="text-5xl font-headline font-bold text-white">120+</span>
+<span class="text-label-md uppercase tracking-widest text-on-surface-variant text-xs">Projects Completed</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-5xl font-headline font-bold text-white">15</span>
+<span class="text-label-md uppercase tracking-widest text-on-surface-variant text-xs">Years Experience</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-5xl font-headline font-bold text-white">85</span>
+<span class="text-label-md uppercase tracking-widest text-on-surface-variant text-xs">Skilled Workers</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-5xl font-headline font-bold text-white">98%</span>
+<span class="text-label-md uppercase tracking-widest text-on-surface-variant text-xs">Happy Clients</span>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 px-8 md:px-24">
+<div class="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-6xl font-bold tracking-tighter text-white mb-6 uppercase">Our Engineering <br/> Disciplines</h2>
+<div class="w-24 h-2 monolith-gradient rounded-full"></div>
+</div>
+<p class="text-on-surface-variant max-w-sm">From foundational structural work to intricate interior finishes, we build with local insight and global standards.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="bg-surface-container-highest p-10 rounded-xl group hover:bg-surface-container-high transition-all duration-500 border-b-4 border-transparent hover:border-primary-container">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-8" data-icon="home_work">home_work</span>
+<h3 class="text-2xl font-bold text-white mb-4">House Construction</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Bespoke residential estates designed for Jaffna's climate and modern luxury lifestyles.</p>
+<div class="h-[1px] w-full bg-outline-variant/10 group-hover:bg-primary-container/20 transition-colors"></div>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-highest p-10 rounded-xl group hover:bg-surface-container-high transition-all duration-500 border-b-4 border-transparent hover:border-primary-container">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-8" data-icon="domain">domain</span>
+<h3 class="text-2xl font-bold text-white mb-4">Commercial Projects</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Scalable infrastructures for retail, offices, and industrial hubs across the Northern Province.</p>
+<div class="h-[1px] w-full bg-outline-variant/10 group-hover:bg-primary-container/20 transition-colors"></div>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container-highest p-10 rounded-xl group hover:bg-surface-container-high transition-all duration-500 border-b-4 border-transparent hover:border-primary-container">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-8" data-icon="architecture">architecture</span>
+<h3 class="text-2xl font-bold text-white mb-4">Architectural Planning</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Precision blueprints that merge traditional aesthetics with contemporary geometric forms.</p>
+<div class="h-[1px] w-full bg-outline-variant/10 group-hover:bg-primary-container/20 transition-colors"></div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us: Asymmetric Layout -->
+<section class="bg-surface-container-low py-32 px-8 md:px-24 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
+<div class="lg:w-1/2 relative">
+<div class="absolute -top-12 -left-12 w-48 h-48 monolith-gradient opacity-10 rounded-full blur-3xl"></div>
+<img alt="Architecture Detail" class="rounded-xl relative z-10 grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" data-alt="Close up architectural detail of a brutalist concrete building with clean lines and geometric shadows during bright daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS8ccizQih1It_1bjA6h8eAnVTS3QkYCmjChhkgQvuzSRV7ttb2gItMghwhKtSCPppQyisLuygP7rRSgjcK8Pb24mglelbvaxcBsRXGKLDOox8hBYwarHHwmGbcCiZoj8pimkesdidF7X6x2WXT4heYOk7NeFa_DBsTd3KabyKkHJ1EGviKFr-SeJewEjlzF4KlYzBiFTo0iSFiSQ8yttTLSdzE236KLxTChQmYcQru74geVyvAfRe7F90v4olK1nZ1cMr--cmNhU"/>
+<div class="absolute -bottom-6 -right-6 bg-surface-bright/80 backdrop-blur-xl p-8 rounded-xl z-20 shadow-xl max-w-xs border border-outline-variant/10">
+<h4 class="text-primary font-bold mb-2 uppercase text-xs tracking-widest">Heritage Insight</h4>
+<p class="text-white text-sm">Every project honors the architectural legacy of Jaffna while embracing future-proof technology.</p>
+</div>
+</div>
+<div class="lg:w-1/2">
+<h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-white mb-12">The Jaffna <br/> Monolith Edge</h2>
+<div class="space-y-12">
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-white mb-2">Quality Materials</h4>
+<p class="text-on-surface-variant text-sm">We source premium materials tested for the unique coastal climate of the Jaffna peninsula.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-white mb-2">On-Time Delivery</h4>
+<p class="text-on-surface-variant text-sm">Agile project management ensures we hand over keys exactly when promised.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="account_balance">account_balance</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-white mb-2">Transparent Pricing</h4>
+<p class="text-on-surface-variant text-sm">No hidden costs. Detailed breakdowns from foundation to finishing.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Grid (Bento Style) -->
+<section class="py-32 px-8 md:px-24">
+<div class="text-center mb-20">
+<h2 class="text-5xl font-bold tracking-tighter text-white mb-8 uppercase">Signature Portfolio</h2>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="bg-primary-container text-on-primary-fixed px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest">All Projects</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest hover:text-white">Residential</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest hover:text-white">Commercial</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest hover:text-white">Heritage</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-[1000px] md:h-[800px]">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl">
+<img alt="The Monolith Villa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0" data-alt="Luxury modern white minimalist villa with large glass windows and a swimming pool reflecting the architecture under a sunset sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpjYUrbDkQbyP3rswuGUBt4MVUfkf-zU4uZctIsSYO9QUJzfLMdWCa068WrPm3agVoluhY-hC4DW3bE8Ld2CZJRJhs4GhnxeIjjfSagw-jkYo9HJFRSohDTdHaPf_xZUvN_-iPYlBbsIL3z8b6c_UBQhakARKomfj6eVp-Ky2Rqp9ecG64hsHdpCjQN-xL9NLE-BYRMGHECZ4SjwoACsRIAGhTHbcLerjFvz90RV_wmlsnGVvxh13PqVjMTapjaD_y_7cwUoMgRHg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-8 left-8">
+<span class="text-primary-container text-xs font-bold uppercase tracking-[0.2em] mb-2 block">Completed</span>
+<h3 class="text-3xl font-bold text-white mb-1 uppercase tracking-tight">The Monolith Villa</h3>
+<p class="text-on-surface-variant text-sm">Thirunelveli, Jaffna</p>
+</div>
+</div>
+<div class="md:col-span-2 relative group overflow-hidden rounded-xl">
+<img alt="Northern Commercial Hub" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0" data-alt="Modern high-rise commercial office building with glass facade and steel structural elements reflecting city lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa_qOchXg3-fVBaG5LskVY7anv6QnMGhIcoggovHC9eVao5vLLmwUL25adSEZtwOTz76PqqJYA3C3MQLq5tL-Sta7wGo-EqFmVBChZN8gOUmPPyOINYdOt1I6A86-KOTO1bECAXneQkK0jJTj0QQOdL7pdBhAAR5L02hTgtojNa7yc94NQFRqouNRByPqga645j4hMRogDe54m_5JsgJi0ywfZWu6IVHyWIKxpG-esuybU2U3i3f4Zd3IzqGI2ozNuiVun5xTNfkE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-6 left-6">
+<span class="text-primary-container text-xs font-bold uppercase tracking-[0.2em] mb-2 block">Ongoing</span>
+<h3 class="text-2xl font-bold text-white mb-1 uppercase tracking-tight">Northern Hub</h3>
+<p class="text-on-surface-variant text-sm">Kantharmadam</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl">
+<img alt="Heritage Estate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0" data-alt="Elegant contemporary kitchen with dark cabinetry, marble surfaces, and atmospheric pendant lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLutT4pFTJ0NRL8CPPmZ36HJTLHt0RmvfZ3xQdBFXbpgY3ITAC0hKH3D0eG3-XO32PiR3-iDOYO5E0MUC_RY-ZVG25UtKrCnQaDm6mvUP9Z9XnEIGF-FM-GrR2eNxMix136AViPidVsuNn0UcKSvLlf9YUnQ5oIK6I9PJH3Tx5yZ646Tf5sI9NqoVSsFcmhnJ7_dYyhkE3q-ydDMzBbODJ9alO5hZNfW90A2LE6dlYzk_TFoQuJKtt9HY8xjssKoBak5lzOHqiTsk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="text-xl font-bold text-white uppercase tracking-tight">Interior Finishes</h3>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl">
+<img alt="Modern Renovation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0" data-alt="Restored old heritage building with high ceilings and integrated modern lighting and furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB9tI6A5Vf7L2HAj5fUHA7GLpfkF0_zWMKjn1MzN0ZMxIdBIdHLpXu7xcYoypKZBIePxX1P9ZpGWAVZTwERj-ELbuKNh8gGHkbWYRHElHhKMERqdk2gnzaw8ctM-i1wWWaTbFZRNxIebZv9emUCopZxpzbOmR3Fo8p8PvVcXXvuvtaxWAvhBk2WkqTF8m1UJsHRNEMXJPepPqhiMQ4TushQeXqybnAeCrSFs2oj0ye9_mn8C00ltbweiTHXJhoFnKI9mFKI1301Gk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="text-xl font-bold text-white uppercase tracking-tight">Heritage Restoration</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- The Process (Progress Rail) -->
+<section class="bg-surface-container-low py-32 px-8 md:px-24">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl font-bold tracking-tighter text-white mb-20 uppercase text-center">Our Blueprint to Reality</h2>
+<div class="relative">
+<!-- Progress Rail -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-2 bg-surface-container-highest -translate-y-1/2">
+<div class="w-1/2 h-full monolith-gradient"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-12 relative z-10">
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full monolith-gradient flex items-center justify-center mb-6 shadow-xl ring-8 ring-surface-container-low">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="forum">forum</span>
+</div>
+<h4 class="text-white font-bold mb-2 uppercase text-sm tracking-widest">Consultation</h4>
+<p class="text-on-surface-variant text-xs px-4">Defining your vision and budget requirements.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full monolith-gradient flex items-center justify-center mb-6 shadow-xl ring-8 ring-surface-container-low">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="design_services">design_services</span>
+</div>
+<h4 class="text-white font-bold mb-2 uppercase text-sm tracking-widest">Design</h4>
+<p class="text-on-surface-variant text-xs px-4">Conceptualizing aesthetics and structural plans.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full monolith-gradient flex items-center justify-center mb-6 shadow-xl ring-8 ring-surface-container-low">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="assignment">assignment</span>
+</div>
+<h4 class="text-white font-bold mb-2 uppercase text-sm tracking-widest">Approvals</h4>
+<p class="text-on-surface-variant text-xs px-4">Navigating local regulations and permits.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center mb-6 shadow-xl ring-8 ring-surface-container-low">
+<span class="material-symbols-outlined text-white/40" data-icon="construction">construction</span>
+</div>
+<h4 class="text-white/40 font-bold mb-2 uppercase text-sm tracking-widest">Construction</h4>
+<p class="text-on-surface-variant/40 text-xs px-4">Heavy structural phase and site execution.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center mb-6 shadow-xl ring-8 ring-surface-container-low">
+<span class="material-symbols-outlined text-white/40" data-icon="key">key</span>
+</div>
+<h4 class="text-white/40 font-bold mb-2 uppercase text-sm tracking-widest">Handover</h4>
+<p class="text-on-surface-variant/40 text-xs px-4">Final inspection and delivering your legacy.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 px-8 md:px-24">
+<h2 class="text-4xl font-bold tracking-tighter text-white mb-20 uppercase">Voices of Trust</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container p-12 rounded-xl relative">
+<span class="material-symbols-outlined text-6xl text-primary-container/20 absolute top-8 right-8" data-icon="format_quote">format_quote</span>
+<p class="text-xl text-white italic mb-8 leading-relaxed font-light">"Jaffna Monolith transformed our ancestral land into a contemporary masterpiece. Their attention to structural integrity is unmatched in the region."</p>
+<div>
+<h4 class="text-white font-bold uppercase tracking-widest">S. Balasubramaniam</h4>
+<span class="text-primary-container text-xs font-bold uppercase">Estate Owner</span>
+</div>
+</div>
+<div class="bg-surface-container p-12 rounded-xl relative">
+<span class="material-symbols-outlined text-6xl text-primary-container/20 absolute top-8 right-8" data-icon="format_quote">format_quote</span>
+<p class="text-xl text-white italic mb-8 leading-relaxed font-light">"Professionalism at every step. From the initial 3D designs to the final coat of paint, they were transparent about timelines and materials."</p>
+<div>
+<h4 class="text-white font-bold uppercase tracking-widest">K. Rathnayake</h4>
+<span class="text-primary-container text-xs font-bold uppercase">Commercial Developer</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 px-8 md:px-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20">
+<div class="lg:w-1/2">
+<h2 class="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-8 uppercase">Start Your <br/> Project</h2>
+<p class="text-on-surface-variant text-lg mb-12 max-w-md">Ready to build something enduring? Our engineering team is standing by for a private consultation.</p>
+<div class="space-y-8 mb-12">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary-container" data-icon="location_on">location_on</span>
+<div>
+<p class="text-white font-bold text-sm uppercase">HQ Office</p>
+<p class="text-on-surface-variant text-sm">78 Temple Road, Jaffna, Sri Lanka</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary-container" data-icon="call">call</span>
+<div>
+<p class="text-white font-bold text-sm uppercase">Contact</p>
+<p class="text-on-surface-variant text-sm">+94 21 222 4500</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary-container" data-icon="mail">mail</span>
+<div>
+<p class="text-white font-bold text-sm uppercase">Email</p>
+<p class="text-on-surface-variant text-sm">build@jaffnamonolith.lk</p>
+</div>
+</div>
+</div>
+<div class="h-64 bg-surface-container rounded-xl overflow-hidden grayscale">
+<div class="w-full h-full bg-slate-800 flex items-center justify-center" data-location="Jaffna" style="">
+<span class="text-white/20 uppercase font-black tracking-widest">Jaffna Map View</span>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 bg-surface-container-low p-10 md:p-16 rounded-xl">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-white focus:ring-2 focus:ring-primary-container/40" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Phone Number</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-white focus:ring-2 focus:ring-primary-container/40" type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-white focus:ring-2 focus:ring-primary-container/40" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Project Type</label>
+<select class="w-full bg-surface-container-high border-none rounded-lg p-4 text-white focus:ring-2 focus:ring-primary-container/40">
+<option>Residential Villa</option>
+<option>Commercial Complex</option>
+<option>Renovation</option>
+<option>Interior Design</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Message</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-lg p-4 text-white focus:ring-2 focus:ring-primary-container/40" rows="4"></textarea>
+</div>
+<button class="w-full monolith-gradient py-4 rounded-lg text-on-primary-fixed font-extrabold uppercase tracking-widest shadow-xl active:scale-95 transition-all">
+                        Send Inquiry
+                    </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0c1322] w-full border-t border-slate-800/50">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 w-full">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-black text-white mb-6 uppercase">JAFFNA MONOLITH</div>
+<p class="text-slate-400 text-sm leading-relaxed mb-8">Architectural Monoliths designed for endurance. Building the North with uncompromising quality since 2009.</p>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container hover:bg-primary-container hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container hover:bg-primary-container hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="public">public</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold uppercase tracking-widest text-xs mb-4">Core Services</h4>
+<a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 text-sm" href="#">Industrial Build</a>
+<a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 text-sm" href="#">Luxury Residence</a>
+<a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 text-sm" href="#">Renovation</a>
+<a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 text-sm" href="#">Interior Design</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold uppercase tracking-widest text-xs mb-4">Quick Links</h4>
+<a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 text-sm" href="#">Privacy Policy</a>
+<a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 text-sm" href="#">Terms of Service</a>
+<a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 text-sm" href="#">Local Heritage</a>
+<a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 text-sm" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold uppercase tracking-widest text-xs mb-4">Newsletter</h4>
+<p class="text-slate-400 text-xs mb-4">Get the latest construction insights from the North.</p>
+<div class="relative">
+<input class="w-full bg-surface-container-high border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-primary-container" placeholder="Email Address" type="email"/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 text-primary-container">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-slate-800/30 flex flex-col md:row justify-between items-center gap-4">
+<p class="text-slate-500 text-xs text-center font-['Manrope']">© 2024 Jaffna Monolith Construction. All Rights Reserved.</p>
+<div class="flex gap-8">
+<span class="text-slate-500 text-xs">Licence: JMN-2009-LK</span>
+<span class="text-slate-500 text-xs">ISO 9001:2015</span>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp CTA -->
+<a class="fixed bottom-8 right-8 z-[60] monolith-gradient w-16 h-16 rounded-full shadow-2xl flex items-center justify-center group active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined text-on-primary-fixed text-3xl" data-icon="chat" data-weight="fill" style="font-variation-settings: 'FILL' 1;">chat</span>
+<div class="absolute right-20 bg-surface-bright px-4 py-2 rounded-lg text-white text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl">
+            Chat with an Engineer
+        </div>
+</a>
+</body></html>
