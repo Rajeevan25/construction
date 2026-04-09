@@ -57,13 +57,13 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1, duration: 0.8 }}
                 viewport={{ once: true }}
-                className="glass-card p-12 rounded-3xl group hover:border-primary/50 transition-all duration-700 relative overflow-hidden"
+                className="glass-card p-6 md:p-10 lg:p-12 rounded-3xl group hover:border-primary/50 transition-all duration-700 relative overflow-hidden"
               >
                 {/* Hover gradient background */}
                 <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 
                 <div className="relative z-10">
-                  <div className="w-20 h-20 rounded-2xl bg-primary/5 border border-primary/10 flex items-center justify-center mb-10 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 shadow-inner">
+                  <div className="w-14 h-14 md:w-20 md:h-20 rounded-2xl bg-primary/5 border border-primary/10 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 shadow-inner">
                     <Icon className="w-10 h-10 transition-transform duration-500 group-hover:rotate-12" />
                   </div>
                   <h3 className="text-2xl font-black text-white mb-6 uppercase font-heading tracking-tight leading-none group-hover:text-primary transition-colors">

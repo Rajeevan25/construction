@@ -25,7 +25,7 @@ export default function Home() {
       <section className="bg-background py-32 px-6 overflow-hidden relative">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full northstone-gradient opacity-5 blur-[120px] pointer-events-none" />
         
-        <div className="container mx-auto max-w-7xl flex flex-col lg:flex-row gap-20 items-center relative z-10">
+        <div className="container mx-auto max-w-7xl flex flex-col lg:flex-row gap-10 lg:gap-20 items-center relative z-10">
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -47,7 +47,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
               viewport={{ once: true }}
-              className="absolute -bottom-8 -right-8 glass-card p-10 rounded-2xl z-20 shadow-2xl max-w-xs border-primary/20"
+              className="absolute -bottom-4 -right-4 md:-bottom-8 md:-right-8 glass-card p-6 md:p-10 rounded-2xl z-20 shadow-2xl max-w-[200px] md:max-w-xs border-primary/20"
             >
               <h4 className="text-primary font-black mb-4 uppercase text-[10px] tracking-[0.3em]">Heritage Insight</h4>
               <p className="text-white/80 text-sm font-light leading-relaxed">Every project honors the architectural legacy of Jaffna while embracing future-proof technology.</p>
@@ -60,7 +60,7 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-5xl md:text-8xl font-black tracking-tight text-white mb-12 uppercase font-heading leading-[0.9]"
+              className="text-3xl sm:text-5xl md:text-8xl font-black tracking-tight text-white mb-8 md:mb-12 uppercase font-heading leading-[0.9]"
             >
               The NorthStone <br /> <span className="text-primary">Edge</span>
             </motion.h2>

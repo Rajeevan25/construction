@@ -99,6 +99,9 @@
   .northstone-gradient {
     background: linear-gradient(135deg, #ffb690 0%, #f97316 100%);
   }
+  .whatsapp-gradient {
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  }
   .liquid-copper {
     background: linear-gradient(135deg, 
       #8d4b31 0%, 

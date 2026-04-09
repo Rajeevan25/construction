@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center gap-3">
           <Link 
             href={`tel:${siteConfig.contact.phone.replace(/[^\d+]/g, '')}`}
-            className="w-10 h-10 flex items-center justify-center rounded-xl bg-primary/10 border border-primary/20 text-primary shadow-lg shadow-primary/5 active:scale-90 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-xl bg-[#f97316]/10 border border-[#f97316]/20 text-[#f97316] shadow-lg shadow-[#f97316]/5 active:scale-90 transition-all"
           >
             <Phone className="w-5 h-5" />
           </Link>

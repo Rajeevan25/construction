@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site-content";
-import { Globe, Mail, Phone, Send } from "lucide-react";
+import { Globe, Mail, Send } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-background border-t border-border/50">
-      <div className="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
         <div className="space-y-6">
           <div className="text-xl font-black text-white uppercase tracking-tighter decoration-primary underline-offset-8">
             {siteConfig.name}

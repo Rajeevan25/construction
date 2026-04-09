@@ -1,7 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppCTA from "@/components/shared/WhatsAppCTA";
-import { siteConfig } from "@/config/site-content";
 
 export default function AboutPage() {
   return (
@@ -9,7 +8,7 @@ export default function AboutPage() {
       <Navbar />
       
       {/* About Hero */}
-      <section className="relative min-h-[70vh] flex items-center px-6 md:px-24 py-32 overflow-hidden">
+      <section className="relative min-h-[50vh] md:min-h-[70vh] flex items-center px-6 md:px-12 lg:px-24 py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/about/hero.jpg" 
@@ -21,7 +20,7 @@ export default function AboutPage() {
         
         <div className="relative z-10 max-w-4xl mx-auto container">
           <span className="text-primary font-black tracking-[0.3em] uppercase text-[10px] mb-6 block">Our Heritage</span>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.85] tracking-tighter mb-10 uppercase font-heading">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl xl:text-9xl font-black text-white leading-[0.85] tracking-tighter mb-8 md:mb-10 uppercase font-heading">
             Built on <span className="text-primary underline decoration-8 underline-offset-8">Bedrock</span>.
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl font-light leading-relaxed">
@@ -33,23 +32,23 @@ export default function AboutPage() {
       {/* Legacy Section */}
       <section className="px-6 py-32 container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          <div className="md:col-span-7 bg-muted/30 p-12 md:p-20 rounded-3xl border-l-8 border-primary shadow-2xl">
+          <div className="md:col-span-7 bg-muted/30 p-8 md:p-12 lg:p-20 rounded-3xl border-l-8 border-primary shadow-2xl">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-8 uppercase font-heading tracking-tighter">The NorthStone Legacy</h2>
             <p className="text-lg text-muted-foreground mb-12 leading-relaxed font-light">
               For over two decades, NorthStone Constructions has stood as a testament to durability. What started as a small masonry collective in the heart of Jaffna has evolved into the region's leading construction firm. Our work isn't just about buildings; it's about restoring the architectural pride of our community.
             </p>
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid grid-cols-2 gap-6 md:gap-12">
               <div>
-                <span className="block text-5xl font-black text-primary font-heading">500+</span>
+                <span className="block text-3xl md:text-5xl font-black text-primary font-heading">500+</span>
                 <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-black">Projects Completed</span>
               </div>
               <div>
-                <span className="block text-5xl font-black text-primary font-heading">250+</span>
+                <span className="block text-3xl md:text-5xl font-black text-primary font-heading">250+</span>
                 <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-black">Skilled Artisans</span>
               </div>
             </div>
           </div>
-          <div className="md:col-span-5 relative min-h-[400px] overflow-hidden rounded-3xl group">
+          <div className="md:col-span-5 relative min-h-[250px] md:min-h-[400px] overflow-hidden rounded-3xl group">
             <img 
               src="/images/about/heritage.jpg" 
               className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" 
@@ -72,7 +71,7 @@ export default function AboutPage() {
           <p className="text-muted-foreground max-w-sm text-right font-light italic">Guided by experience, driven by innovation. Meet the minds behind the NorthStone.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12">
           {[
             { name: "Ar. S. Thambidurai", role: "Founder & CEO", desc: "35+ Years in Structural Engineering", img: "/images/team/ceo.jpg" },
             { name: "Meera Ratnam", role: "Head of Operations", desc: "Expert in Sustainable Development", img: "/images/team/ops.jpg" },

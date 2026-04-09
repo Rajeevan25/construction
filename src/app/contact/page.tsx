@@ -24,7 +24,7 @@ export default function ContactPage() {
 
       {/* Map Section */}
       <section className="pb-32 px-6 container mx-auto max-w-7xl">
-        <div className="rounded-3xl overflow-hidden h-[500px] relative border border-border/50">
+        <div className="rounded-3xl overflow-hidden h-[300px] md:h-[400px] lg:h-[500px] relative border border-border/50">
           <iframe
             title="NorthStone Constructions — Jaffna HQ"
             src="https://maps.google.com/maps?q=Temple+Road,+Jaffna,+Sri+Lanka&t=&z=16&ie=UTF8&iwloc=&output=embed"

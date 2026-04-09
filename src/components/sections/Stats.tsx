@@ -27,7 +27,7 @@ const Counter = ({ value }: { value: string }) => {
   }, [isInView, motionValue, numericValue]);
 
   return (
-    <span ref={ref} className="text-5xl md:text-[5rem] font-heading font-black text-white tracking-tighter transition-all duration-300 group-hover:text-primary">
+    <span ref={ref} className="text-3xl md:text-5xl lg:text-[5rem] font-heading font-black text-white tracking-tighter transition-all duration-300 group-hover:text-primary">
       <motion.span>{displayValue}</motion.span>
       <span className="text-primary text-4xl ml-1">{suffix}</span>
     </span>
@@ -40,7 +40,7 @@ const Stats = () => {
       <div className="absolute top-0 right-0 w-96 h-96 northstone-gradient opacity-5 rounded-full blur-[100px] -mr-48 -mt-48" />
       
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24 relative z-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 lg:gap-24 relative z-10">
           {siteConfig.stats.map((stat, index) => (
             <motion.div
               key={stat.label}

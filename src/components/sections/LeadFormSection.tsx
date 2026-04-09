@@ -9,10 +9,10 @@ const LeadFormSection = () => {
   return (
     <section id="contact" className="py-32 px-6 bg-background relative overflow-hidden">
       {/* Background Decorative Element */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -mr-64 -mt-64" />
+      <div className="absolute top-0 right-0 w-[280px] h-[280px] md:w-[500px] md:h-[500px] bg-primary/5 rounded-full blur-[120px] -mr-32 -mt-32 md:-mr-64 md:-mt-64" />
       
       <div className="container mx-auto max-w-7xl relative z-10">
-        <div className="flex flex-col lg:flex-row gap-20">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
           <div className="lg:w-1/2">
             <motion.span
               initial={{ opacity: 0 }}
@@ -26,7 +26,7 @@ const LeadFormSection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-5xl md:text-8xl font-black tracking-tighter text-white mb-12 uppercase font-heading leading-none"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-black tracking-tighter text-white mb-8 md:mb-12 uppercase font-heading leading-none"
             >
               Start Your <br /> Project
             </motion.h2>
@@ -70,7 +70,7 @@ const LeadFormSection = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="lg:w-1/2 bg-card p-10 md:p-16 rounded-3xl border border-border/50 shadow-2xl relative"
+            className="lg:w-1/2 bg-card p-6 md:p-10 lg:p-16 rounded-3xl border border-border/50 shadow-2xl relative"
           >
             <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
